@@ -1,0 +1,13 @@
+- content_for :javascript do
+  :javascript
+    var eventName = typeof(Turbolinks) !== 'undefined' ? 'turbolinks:load' : 'DOMContentLoaded';
+    
+      if (!document.documentElement.hasAttribute("data-turbolinks-preview")) {
+        document.addEventListener(eventName, function flash() {
+					- if flash[:notice]
+						ShopifyApp.flashNotice(== flash[:notice].to_json);
+					- if flash[:error]
+						ShopifyApp.flashError(== flash[:error].to_json);	
+					document.removeEventListener(eventName, flash)
+				});
+			}					
