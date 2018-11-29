@@ -14,9 +14,6 @@ gem 'haml', '5.0.4'
 gem 'haml-rails', '1.0.0'
 
 # Assets
-# gem 'less', '2.6.0'
-# gem 'less-rails', '4.0.0'
-# gem 'less-rails-bootstrap'
 # gem 'jquery-rails'
 
 # Use Uglifier as compressor for JavaScript assets

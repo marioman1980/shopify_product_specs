@@ -4,10 +4,10 @@
     
       if (!document.documentElement.hasAttribute("data-turbolinks-preview")) {
         document.addEventListener(eventName, function flash() {
-					- if flash[:notice]
-						ShopifyApp.flashNotice(== flash[:notice].to_json);
-					- if flash[:error]
-						ShopifyApp.flashError(== flash[:error].to_json);	
-					document.removeEventListener(eventName, flash)
-				});
-			}					
+          - if flash[:notice]
+            ShopifyApp.flashNotice(== flash[:notice].to_json);
+          - if flash[:error]
+            ShopifyApp.flashError(== flash[:error].to_json);
+          document.removeEventListener(eventName, flash)
+        });
+      }
