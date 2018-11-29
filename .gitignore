@@ -28,5 +28,5 @@
 /config/credentials.yml.enc
 /config/database.yml
 
-# /config/initializers/shopify_app.rb
+/config/initializers/shopify_app.rb
 
