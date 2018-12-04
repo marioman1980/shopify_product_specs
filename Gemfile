@@ -28,6 +28,9 @@ gem 'bootsnap', '1.3.2', require: false
 
 group :development, :test do
   gem 'pry', '0.12.2'
+  gem 'pry-remote', '0.1.8'
+  gem 'pry-stack_explorer', '0.4.9.3'
+  gem 'pry-byebug', '3.6.0'  
 end
 
 group :development do
