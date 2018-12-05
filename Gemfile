@@ -4,17 +4,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
 gem 'shopify_app', '8.4.0'
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'dotenv-rails', '2.5.0', groups: [:development, :test]
 gem 'rails', '5.2.1.1'
 gem 'mysql2', '0.5.2'
 gem 'sinatra', '2.0.4'
 
 gem 'haml', '5.0.4'
 gem 'haml-rails', '1.0.0'
-
-# Assets
-# gem 'jquery-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '4.1.20'
