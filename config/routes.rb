@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   get 'create_test', to: 'home#create'
 
   get 'product_specs/:id', to: 'products#new'
+
+  post 'product_create', to: 'product_create_webhook#product_create'
+
 end

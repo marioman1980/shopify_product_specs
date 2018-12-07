@@ -3,9 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
-gem 'shopify_app', '8.4.0'
+gem 'shopify_app', '8.3.2'
 gem 'dotenv-rails', '2.5.0', groups: [:development, :test]
-gem 'rails', '5.2.1.1'
+# gem 'rails', '5.2.1.1'
+gem 'rails', '5.2.2'
 gem 'mysql2', '0.5.2'
 gem 'sinatra', '2.0.4'
 
