@@ -6,8 +6,8 @@ class ProductCreateWebhookJob < ActiveJob::Base
     	@product = ShopifyAPI::Product.find(webhook[:id])
 			@product.add_metafield(ShopifyAPI::Metafield.new({
 				:namespace => 'guitars',
-				:key => 'author',
-				:value => 'Kurt Vonnegut',
+				:key => 'neck',
+				:value => 'Enter Value',
 				:value_type => 'string'
 			}))      	
     end
