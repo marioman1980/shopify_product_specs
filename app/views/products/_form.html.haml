@@ -1,0 +1,19 @@
+%div{:style => "--top-bar-background:#00848e; --top-bar-color:#f9fafb; --top-bar-background-darker:#006d74; --top-bar-background-lighter:#1d9ba4;"}
+	= form_tag do
+		.Polaris-FormLayout
+			.Polaris-FormLayout__Item
+				.Polaris-Labelled__LabelWrapper
+					.Polaris-Label
+						= label_tag :neck, "Neck", :class => "Polaris-Label__Text"
+				.Polaris-TextField		
+					= text_field_tag :neck, @product.metafields.find{ |pm| pm.key == 'neck' }.value, :class => "Polaris-TextField__Input"
+					.Polaris-TextField__Backdrop
+			.Polaris-FormLayout__Item
+				.Polaris-Labelled__LabelWrapper
+					.Polaris-Label
+						= label_tag :body, "Body", :class => "Polaris-Label__Text"
+				.Polaris-TextField	
+					= text_field_tag :body, @product.metafields.find{ |pm| pm.key == 'body' }.value, :class => "Polaris-TextField__Input"
+					.Polaris-TextField__Backdrop
+			.Polaris-FormLayout__Item
+				= submit_tag "Save"
